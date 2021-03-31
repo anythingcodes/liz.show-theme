@@ -101,7 +101,7 @@
     display: inline;
 
     &::before {
-      content: ','
+      content: '|'
     }
     &:first-child {
       &::before {
