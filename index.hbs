@@ -69,8 +69,14 @@ into the {body} of the default.hbs template --}}
                               <div style="background-image: url({{asset "images/default-avatar-square-small.jpg"}});"></div>
                             {{/if}}
                           </a>
-                          {{#if primary_tag}}
-                            <a href="{{primary_tag.url}}" class="m-featured-article__tag">{{primary_tag.name}}</a>
+                          {{#if tags}}
+                            <ul class="m-featured-article__tags">
+                            {{#foreach tags}}
+                              <li>
+                                <a href="{{url}}" title="{{name}}" class="m-featured-article__tag">{{name}}</a>
+                              </li>
+                            {{/foreach}}
+                            </ul>
                           {{/if}}
                         </div>
                         <div class="m-featured-article__ribbon">

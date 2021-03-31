@@ -23,9 +23,17 @@
         </a>
       {{/if}}
     </div>
-    {{#if primary_tag}}
+    {{#if tags}}
       <div class="m-article-card__info">
-        <a href="{{primary_tag.url}}" class="m-article-card__tag">{{primary_tag.name}}</a>
+        {{#if tags}}
+          <ul class="m-article-card__tags">
+          {{#foreach tags}}
+            <li>
+              <a href="{{url}}" title="{{name}}" class="m-article-card__tag">{{name}}</a>
+            </li>
+          {{/foreach}}
+          </ul>
+        {{/if}}
     {{else}}
       <div class="m-article-card__info no-tag">
     {{/if}}
