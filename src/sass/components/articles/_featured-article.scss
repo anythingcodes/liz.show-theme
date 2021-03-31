@@ -5,7 +5,7 @@
   background-color: var(--primary-subtle-color);
   z-index: 1;
 
-  &&:before {
+  &::before {
     content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
