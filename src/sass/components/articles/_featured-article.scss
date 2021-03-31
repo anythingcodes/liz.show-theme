@@ -92,11 +92,30 @@
   }
 }
 
-.m-featured-article__tag {
-  color: $white;
-  letter-spacing: 0.3px;
-  font-weight: 700;
-  font-size: 1rem;
+.m-featured-article__tags {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline;
+
+    &::before {
+      content: ','
+    }
+    &:first-child {
+      &::before {
+        content: '';
+      }
+    }
+  }
+  a {
+    color: $white;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
 }
 
 .m-featured-article__ribbon {
