@@ -193,15 +193,10 @@
 .m-article-card__info {
   flex: 1;
   position: relative;
-  padding-top: 48px;
-  height: 200px;
+  padding-top: 30px;
   overflow: hidden;
   border-radius: 0 0 10px 10px;
   background-color: var(--background-color);
-
-  @include respond-to('medium') {
-    padding-top: 53px;
-  }
 
   &.no-tag {
     padding-top: 0 !important;
@@ -245,7 +240,6 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
   padding: 0 $mobile-space $mobile-space $mobile-space;
 
   @include respond-to('medium') {
@@ -280,6 +274,7 @@
   color: var(--titles-color);
   letter-spacing: 0.2px;
   font-size: 0.875rem;
+  margin-top: .5em;
 
   span:nth-child(2) {
     padding: 0 10px;
