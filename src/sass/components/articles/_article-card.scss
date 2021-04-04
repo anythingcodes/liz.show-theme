@@ -215,6 +215,9 @@
   list-style: none;
   padding: 0 25px 9px;
   margin: 0;
+  @include respond-to('medium') {
+    padding-left: 25px;
+  }
   li {
     display: inline;
     &::before {
